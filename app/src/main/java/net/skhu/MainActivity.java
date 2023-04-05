@@ -1,6 +1,7 @@
 package net.skhu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +30,12 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.action_memo) {
             Toast.makeText(this, "메모장 메뉴 클릭", Toast.LENGTH_LONG).show();
             return true;
+        }else if (id == R.id.action_spinners) {
+            Intent intent = new Intent(this, SpinnersActivity.class);
+            startActivity(intent);
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

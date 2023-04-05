@@ -10,4 +10,8 @@
         android:id="@+id/action_memo"
         android:title="@string/action_memo"
         app:showAsAction="always" />
+    <item android:id="@+id/action_spinners"
+        android:title="@string/action_spinners"
+        app:showAsAction="never" />
+
 </menu>
