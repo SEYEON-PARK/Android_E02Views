@@ -17,7 +17,7 @@ public class SpinnersActivity extends AppCompatActivity {
 
         String[] stringArray = { "집주소", "직장주소", "기타" };
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, stringArray);
+                new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_item, stringArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner spinner = findViewById(R.id.spinner_addressType);
         spinner.setAdapter(adapter);

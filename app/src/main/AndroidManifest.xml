@@ -12,6 +12,10 @@
         android:theme="@style/Theme.02_VViews"
         tools:targetApi="31">
         <activity
+            android:name=".AlertsActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".SpinnersActivity"
             android:label="@string/action_spinners" />
         <activity
